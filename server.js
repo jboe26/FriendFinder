@@ -5,13 +5,9 @@ var path = require('path');
 
 var app = express();
 
-var app = path();
+// var app = path();
 
-var PORT = 5000;
-
-
-require("./app/routing/apiRoutes.js")(app);
-require("./app/routing/htmlRoutes.js")(app);
+var PORT = 3838;
 
 
 app.listen(PORT, function() {
