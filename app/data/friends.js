@@ -1,6 +1,4 @@
- <script type="text/javascript">
-    
-    var config = {
+      var config = {
       ".chosen-select": {},
       ".chosen-select-deselect": {
         allow_single_deselect: true
@@ -69,4 +67,4 @@
       }
       return false;
     });
-  </script>
+  
