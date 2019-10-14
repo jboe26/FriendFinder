@@ -1,3 +1,5 @@
+$(document).ready(function(){
+  
 
 var config = {
   ".chosen-select": {},
@@ -126,3 +128,4 @@ $("#submit").on("click", function (event) {
   return false;
 });
 
+})
