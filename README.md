@@ -10,7 +10,7 @@
 
 ##### While you wait, feel free to take a look at my GitHub page!
 
-[GitHub]: https://github.com/jboe26/FriendFinder
+[GitHub]: (https://github.com/jboe26/FriendFinder)
 
 # GIFs on how to use FriendFinder:
 
