@@ -1,3 +1,4 @@
+      
       var config = {
       ".chosen-select": {},
       ".chosen-select-deselect": {
@@ -54,6 +55,7 @@
           ]
         };
 
+           
         // AJAX post the data to the friends API.
         $.post("/api/friends", userData, function(data) {
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
