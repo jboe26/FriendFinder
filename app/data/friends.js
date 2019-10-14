@@ -41,6 +41,23 @@ $("#submit").on("click", function (event) {
   if (validateForm()) {
     // Create an object for the user"s data
     var userData = {
+      name: $("#name").val(),
+      photo: $("#photo").val(),
+      scores: [
+        $("#q1").val(),
+        $("#q2").val(),
+        $("#q3").val(),
+        $("#q4").val(),
+        $("#q5").val(),
+        $("#q6").val(),
+        $("#q7").val(),
+        $("#q8").val(),
+        $("#q9").val(),
+        $("#q10").val()
+      ]
+    }
+
+    var friendsArray = {
       name:   "Josh",
       photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
       scores: [
@@ -115,7 +132,7 @@ $("#submit").on("click", function (event) {
 
 
     // AJAX post the data to the friends API.
-    $.post("/api/friends", userData, function (data) {
+    $.post("/api/friends",  userData, friendsArray, function (data) {
       // Grab the result from the AJAX post so that the best match's name and photo are displayed.
       $("#match-name").text(data.name);
       $("#match-img").attr("src", data.photo);
