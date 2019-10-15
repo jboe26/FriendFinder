@@ -1,3 +1,5 @@
+$(document).ready(function(){
+  console.log('its working!');
 
   var config = {
     ".chosen-select": {},
@@ -14,9 +16,9 @@
       width: "95%"
     }
   };
-  // for (var selector in config) {
-  //   $(selector).chosen(config[selector]);
-  // }
+  for (var selector in config) {
+    $(selector).chosen(config[selector]);
+  }
 
   // Capture the form inputs
   $("#submit").on("click", function (event) {
@@ -74,3 +76,4 @@
   });
 
 
+});
