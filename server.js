@@ -21,6 +21,11 @@ app.use(express.json());
 // For serving of static CSS
 app.use(express.static(__dirname + "/app/data/style.css"));
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 require('./app/routing/apiRoutes')(app);
 require('./app/routing/htmlRoutes')(app);
 
