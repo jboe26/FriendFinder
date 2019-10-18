@@ -1,14 +1,13 @@
 
-var path = require("path");
+var path = require('path');
 
-module.exports = function(app) {
-	// routes to the survey HTML file
-	app.get("/survey", function(req, res) {
-		res.sendFile(path.join('../public/survey.html'));
+module.exports = (app) => {
+	
+	app.get('/', (req, res) => {
+		res.sendFile(path.join(__dirname, '../public/home.html'));
 	});
 
-	// route for homepage
-	app.get(function(req, res) {
-		res.sendFile(path.join('/../public/home.html'));
+	app.get('/survey', (req, res) => {
+		res.sendFile(path.join(__dirname, '../public/survey.html'));
 	});
 };
