@@ -238,7 +238,7 @@ $("#submit").on("click", function (event){
             $("#match-img").attr("src", friends.photo);
             // Show the modal with the match found
             // $("#results-modal").modal("toggle");
-            console.log(friends)
+          alert(JSON.stringify("Your best match is: " + friends.matchName))
         });
     } else {
         alert("Please fill out all fields before submitting!");
