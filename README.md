@@ -14,3 +14,4 @@
 
 # GIFs on how to use FriendFinder:
 
+[FriendFinderGif](friends.gif)
